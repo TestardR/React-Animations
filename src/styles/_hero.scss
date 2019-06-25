@@ -1,0 +1,15 @@
+section.hero {
+  padding-top: 8em;
+  background: url('../static/images/Hero.jpg');
+  background-size: cover;
+
+  p {
+    width: 70%;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+}

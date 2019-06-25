@@ -1,0 +1,48 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  section {
+    padding: 3em;
+  }
+
+  h1,
+  h2,
+  .read-btn {
+    text-transform: uppercase;
+    margin: 0;
+    font-family: 'Montserrat-Bold';
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .read-btn {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background: url('../static/images/Arrow.svg') no-repeat;
+    background-size: 8px;
+    background-position: 0 1px;
+    padding-left: 1em;
+  }
+
+  .primary {
+    padding: 1.5em 1.5em 1.5em calc(3em + 25px);
+    background-position: 3em;
+    border: 1px solid gray;
+    margin-top: 3em;
+    margin-left: -3em;
+    display: inline-block;
+  }
+
+  .clipper {
+    overflow: hidden;
+  }
+}
+
+section.sidebar,
+section.subscribe {
+  font-size: 0.9rem;
+  line-height: 1.6em;
+}
