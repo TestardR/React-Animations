@@ -8,18 +8,36 @@ const Hero = () => {
       <section className="hero">
         <div className="inner">
           <div className="clipper">
-            <h1>Go Musician</h1>
+            <CSSTransition
+              in={inProp}
+              appear={true}
+              timeout={10000}
+              classNames="fadeTitle"
+            >
+              <h1>Go Musician</h1>
+            </CSSTransition>
           </div>
 
-          <div className="anim-panel">
+          <CSSTransition
+            in={inProp}
+            appear={true}
+            timeout={10000}
+            classNames="anim"
+          >
             <p>
               Start touring all over the place and melting the hearts of chicks.
             </p>
-
+          </CSSTransition>
+          <CSSTransition
+            in={inProp}
+            appear={true}
+            timeout={10000}
+            classNames="anim"
+          >
             <a href="#" className="read-btn primary">
               Get Famous
             </a>
-          </div>
+          </CSSTransition>
         </div>
       </section>
     </CSSTransition>

@@ -9,13 +9,39 @@ const Subscribe = () => {
         <div className="subscribe">
           <div className="inner">
             <div className="clipper">
-              <h2>Subscribe</h2>
+              <CSSTransition
+                in={inProp}
+                appear={true}
+                timeout={10000}
+                classNames="fadeTitle"
+              >
+                <h2>Subscribe</h2>
+              </CSSTransition>
             </div>
-            <div className="anim-panel">
+            <CSSTransition
+              in={inProp}
+              appear={true}
+              timeout={10000}
+              classNames="anim"
+            >
               <p>Get the latest updates about this website and stuff.</p>
+            </CSSTransition>
+            <CSSTransition
+              in={inProp}
+              appear={true}
+              timeout={10000}
+              classNames="anim"
+            >
               <input placeholder="Email Address" type="text" name="email" />
+            </CSSTransition>
+            <CSSTransition
+              in={inProp}
+              appear={true}
+              timeout={10000}
+              classNames="anim"
+            >
               <button className="cta">Subscribe Now</button>
-            </div>
+            </CSSTransition>
           </div>
         </div>
       </section>

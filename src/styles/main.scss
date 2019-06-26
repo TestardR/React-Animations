@@ -61,11 +61,39 @@ body {
 /* appear - on page load */
 .fade-appear {
   opacity: 0;
-  transform: scale(0.7) translateY(40px);
+  transform: scale(0.8);
   z-index: 1;
 }
 .fade-appear.fade-appear-active {
   opacity: 1;
   transform: scale(1) translateY(0);
-  transition: opacity 1300ms linear 200ms, transform 1300ms linear 200ms;
+  transition: opacity 1300ms linear 200ms, transform 1300ms ease-in-out 200ms;
+}
+
+.fadeTitle-appear {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-40px);
+  z-index: 1;
+}
+.fadeTitle-appear.fadeTitle-appear-active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 800ms ease-in 200ms, transform 400ms ease-out 800ms,
+    visibility 400ms ease-in 800ms;
+}
+
+.anim-appear {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-50px);
+  z-index: 1;
+}
+.anim-appear.anim-appear-active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 800ms ease-in 800ms, transform 800ms ease-in 1000ms,
+    visibility 1000ms ease-in 1200ms;
 }
