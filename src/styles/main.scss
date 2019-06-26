@@ -57,3 +57,15 @@ body {
     font-size: 21px;
   }
 }
+
+/* appear - on page load */
+.fade-appear {
+  opacity: 0;
+  transform: scale(0.7) translateY(40px);
+  z-index: 1;
+}
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition: opacity 1300ms linear 200ms, transform 1300ms linear 200ms;
+}
